@@ -1,4 +1,4 @@
-/* Simple CDS */
+/* Simple CDS View */
 @AbapCatalog.sqlViewName: 'ZPRAC_SQL_001'   // SQL View Name: SE11
 define view ZPRAC_CDS_001                  // Entity Name: It is used everywhere except SE11 & SE38
   as select from /dmo/travel              // Flight Reference Scenario: Managing Travels
