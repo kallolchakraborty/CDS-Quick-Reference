@@ -17,4 +17,4 @@ define view ZPRAC_CDS_001                  // Entity Name: It is used everywhere
       createdat     as Createdat,
       lastchangedby as Lastchangedby,
       lastchangedat as Lastchangedat
-} 
+}
