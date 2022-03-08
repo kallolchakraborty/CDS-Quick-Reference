@@ -1,6 +1,6 @@
 /* Simple CDS */
 @AbapCatalog.sqlViewName: 'ZPRAC_SQL_001'   // SQL View Name: SE11
-define view ZPRAC_CDS_001                  // Entity Name: ZPRAC_CDS_VIEW_001 : Used other than SE11 & SE38
+define view ZPRAC_CDS_001                  // Entity Name: It is used everywhere except SE11 & SE38
   as select from /dmo/travel              // Flight Reference Scenario: Managing Travels
 {
   key travel_id     as TravelId,
