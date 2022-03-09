@@ -60,10 +60,9 @@ define view ZPRAC_CDS_012
   as select from ZPRAC_TF_003( p1_travel_id: '00000009', p2_customer_id: '000115' )
 {
   Travel_ID,
-  cast( 'CURR' as /dmo/currency_code ) as bf,  //Reference field: /dmo/currency_code: bf is the alias
-  @Semantics.amount.currencyCode: 'bf'
-  Booking_Fee,
-  cast( 'CURR' as /dmo/currency_code ) as tp, //Reference field: /dmo/currency_code: tp is the alias
-  @Semantics.amount.currencyCode: 'bf'
+  cast( 'CURR' as /dmo/currency_code ) as Booking_Fee, //Reference field: /dmo/currency_code
+  @Semantics.amount.currencyCode: 'Booking_Fee'
+  cast( 'CURR' as /dmo/currency_code ) as Total_Price, //Reference field: /dmo/currency_code
+  @Semantics.amount.currencyCode: 'Total_Price'
   Total_Price
 } 
