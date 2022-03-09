@@ -1,2 +1,2 @@
-# CDS-Practice-
-Practice CDS Views
+# CDS-Practice
+These programs are for quick reference.
