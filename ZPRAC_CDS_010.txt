@@ -39,3 +39,22 @@ CLASS zcl_prac_tf_001 IMPLEMENTATION.
   ENDMETHOD.
 
 ENDCLASS.
+/*
+------------------------------------------------------------------------------------
+CDS View: ZPRAC_CDS_010
+*/
+/* 
+Calling of table function in a CDS View 
+    1. Multiple CDS Views can be created on a table function.
+    2. Inner, Left Outer, Right Outer Join can be done on table functions.
+*/
+@AbapCatalog.sqlViewName: 'ZPRAC_SQL_010'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Practice CDS View 010 - Table Function'
+define view ZPRAC_CDS_010
+  as select from ZPRAC_TF_001
+{
+  Travel_ID
+}
