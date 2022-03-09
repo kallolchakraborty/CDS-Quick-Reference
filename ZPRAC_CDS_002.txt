@@ -1,4 +1,4 @@
-/* CDS View with parameter */
+/* CDS View with parameters */
 @AbapCatalog.sqlViewName: 'ZPRAC_SQL_002'
 /* 
 No other annotations are needed as we going to consume it in SE38 
