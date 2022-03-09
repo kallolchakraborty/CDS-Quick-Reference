@@ -70,19 +70,21 @@ CDS View: ZPRAC_CDS_013
 Calling of table function in a CDS View with parameters using constants
 &
 doing casting for the currency field, using dummy table, local variable,
-formatting dates, if.. else statement, case statement.
+formatting dates, if.. else statement.
 */
 @AbapCatalog.sqlViewName: 'ZPRAC_SQL_013'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Practice CDS View 010 - Table Function'
 define view ZPRAC_CDS_013
   as select from ZPRAC_TF_004( p1_travel_id: '00000009', p2_customer_id: '000115' )
 {
   Travel_ID,
-  cast( 'CURR' as /dmo/currency_code ) as bf, //Reference field: /dmo/currency_code
-  @Semantics.amount.currencyCode: 'bf'
-  Booking_Fee,
-  cast( 'CURR' as /dmo/currency_code ) as tp, //Reference field: /dmo/currency_code
-  @Semantics.amount.currencyCode: 'bf'
-  Total_Price,
+  cast( 'CURR' as /dmo/currency_code ) as Booking_Fee, //Reference field: /dmo/currency_code
+  @Semantics.amount.currencyCode: 'Booking_Fee'
+  cast( 'CURR' as /dmo/currency_code ) as Total_Price, //Reference field: /dmo/currency_code
+  @Semantics.amount.currencyCode: 'Total_Price'
   CurrentUser,
   CurrentDate,
   Status
