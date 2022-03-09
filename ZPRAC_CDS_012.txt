@@ -66,4 +66,4 @@ define view ZPRAC_CDS_012
   cast( 'CURR' as /dmo/currency_code ) as tp, //Reference field: /dmo/currency_code: tp is the alias
   @Semantics.amount.currencyCode: 'bf'
   Total_Price
-}
+} 
