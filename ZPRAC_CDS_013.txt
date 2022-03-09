@@ -73,10 +73,6 @@ doing casting for the currency field, using dummy table, local variable,
 formatting dates, if.. else statement, case statement.
 */
 @AbapCatalog.sqlViewName: 'ZPRAC_SQL_013'
-@AbapCatalog.compiler.compareFilter: true
-@AbapCatalog.preserveKey: true
-@AccessControl.authorizationCheck: #CHECK
-@EndUserText.label: 'Practice CDS View 010 - Table Function'
 define view ZPRAC_CDS_013
   as select from ZPRAC_TF_004( p1_travel_id: '00000009', p2_customer_id: '000115' )
 {
