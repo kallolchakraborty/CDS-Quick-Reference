@@ -39,3 +39,21 @@ CLASS zcl_prac_tf_002 IMPLEMENTATION.
   ENDMETHOD.
 
 ENDCLASS.
+/*
+------------------------------------------------------------------------------------
+CDS View: ZPRAC_CDS_011
+*/
+/*
+Calling of table function in a CDS View with parameters using constants
+*/
+@AbapCatalog.sqlViewName: 'ZPRAC_SQL_011'
+@AbapCatalog.compiler.compareFilter: true
+@AbapCatalog.preserveKey: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Practice CDS View 010 - Table Function'
+define view ZPRAC_CDS_011
+  as select from ZPRAC_TF_002( p1_travel_id: '00000009', p2_customer_id: '000115' )
+{
+  Travel_ID,
+  AgencyId
+}
