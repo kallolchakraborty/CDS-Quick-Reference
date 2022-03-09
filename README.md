@@ -1,2 +1,2 @@
-# CDS-Practice
-These programs are for quick reference.
+# CDS-Quick-Reference
+These programs are created for quick reference.
