@@ -1,4 +1,4 @@
-/* CDS View with dynamic variable as parameter */
+/* CDS View with variable as parameter */
 @AbapCatalog.sqlViewName: 'ZPRAC_SQL_006'
 define view ZPRAC_CDS_006
   with parameters
