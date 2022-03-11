@@ -1,5 +1,4 @@
 /*
-
 VDM - BASIC
 
 To standardize the CDS view technical development, SAP came up with the Best Practices with @VDM annotation. 
