@@ -37,8 +37,9 @@ ENDMETHOD.
 Calling the AMDP from a report
 */
 
+DATA(lv_object) = new zcl_pract_amdp_001( ).
+
 //Calling the AMDP by class
-DATA(lv_object) = new zclpract_amdp_001( ).
 CALL METHOD zclpract_amdp_001=>get_details 
     EXPORTING 
         IM_TRAVEL_ID = '0000014'
